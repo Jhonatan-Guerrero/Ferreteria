@@ -70,6 +70,18 @@
     <Compile Include="frmAgregarUsuarios.Designer.cs">
       <DependentUpon>frmAgregarUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEditarHerramientas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarHerramientas.Designer.cs">
+      <DependentUpon>frmEditarHerramientas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarHerramientas2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarHerramientas2.Designer.cs">
+      <DependentUpon>frmEditarHerramientas2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEditarProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +99,12 @@
     </Compile>
     <Compile Include="frmEditUsuarios.Designer.cs">
       <DependentUpon>frmEditUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEliminarHerraminetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminarHerraminetas.Designer.cs">
+      <DependentUpon>frmEliminarHerraminetas.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEliminarProducto.cs">
       <SubType>Form</SubType>
@@ -138,6 +156,12 @@
     <EmbeddedResource Include="frmAgregarUsuarios.resx">
       <DependentUpon>frmAgregarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarHerramientas.resx">
+      <DependentUpon>frmEditarHerramientas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarHerramientas2.resx">
+      <DependentUpon>frmEditarHerramientas2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEditarProductos.resx">
       <DependentUpon>frmEditarProductos.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditUsuarios.resx">
       <DependentUpon>frmEditUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarHerraminetas.resx">
+      <DependentUpon>frmEliminarHerraminetas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEliminarProducto.resx">
       <DependentUpon>frmEliminarProducto.cs</DependentUpon>

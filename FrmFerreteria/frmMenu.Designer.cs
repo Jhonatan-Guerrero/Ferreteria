@@ -76,6 +76,7 @@
             this.btnHerramientas.Name = "btnHerramientas";
             this.btnHerramientas.Size = new System.Drawing.Size(64, 64);
             this.btnHerramientas.Text = "toolStripButton2";
+            this.btnHerramientas.Click += new System.EventHandler(this.btnHerramientas_Click);
             // 
             // btnProductos
             // 

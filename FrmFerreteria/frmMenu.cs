@@ -75,5 +75,18 @@ namespace FrmFerreteria
         {
             Application.Exit();
         }
+
+        private void btnHerramientas_Click(object sender, EventArgs e)
+        {
+            if (btnHerramientas.Enabled)
+            {
+                frmHerramientas h = new frmHerramientas(permisos);
+                h.Show();
+            }
+            else
+            {
+                MessageBox.Show("No tienes permisos para acceder a Usuarios.");
+            }
+        }
     }
 }

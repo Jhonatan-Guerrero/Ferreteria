@@ -56,3 +56,6 @@ C:\Users\nonat\Desktop\FrmFerreteria\FrmFerreteria\obj\Debug\FrmFerreteria.frmEd
 C:\Users\nonat\Desktop\FrmFerreteria\FrmFerreteria\obj\Debug\FrmFerreteria.frmEliminarProducto.resources
 C:\Users\nonat\Desktop\FrmFerreteria\FrmFerreteria\obj\Debug\FrmFerreteria.frmEditarProductos.resources
 C:\Users\nonat\Desktop\FrmFerreteria\FrmFerreteria\obj\Debug\FrmFerreteria.frmEditarProductos2.resources
+C:\Users\nonat\Desktop\FrmFerreteria\FrmFerreteria\obj\Debug\FrmFerreteria.frmEliminarHerraminetas.resources
+C:\Users\nonat\Desktop\FrmFerreteria\FrmFerreteria\obj\Debug\FrmFerreteria.frmEditarHerramientas.resources
+C:\Users\nonat\Desktop\FrmFerreteria\FrmFerreteria\obj\Debug\FrmFerreteria.frmEditarHerramientas2.resources
