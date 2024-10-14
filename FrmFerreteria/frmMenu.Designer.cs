@@ -64,6 +64,7 @@
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(64, 64);
             this.btnUsuarios.Text = "toolStripButton1";
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnHerramientas
             // 
@@ -107,7 +108,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMenu";
             this.Text = "frmMenu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

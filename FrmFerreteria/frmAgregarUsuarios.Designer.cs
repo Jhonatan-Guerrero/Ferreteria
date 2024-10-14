@@ -28,65 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtHerramientas = new System.Windows.Forms.TextBox();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.dtgvHerramientas = new System.Windows.Forms.DataGridView();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtApellidoP = new System.Windows.Forms.TextBox();
+            this.txtRFC = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtApellidoM = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvHerramientas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnAgregarPermisos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // txtHerramientas
+            // txtNombre
             // 
-            this.txtHerramientas.Location = new System.Drawing.Point(122, 112);
-            this.txtHerramientas.Name = "txtHerramientas";
-            this.txtHerramientas.Size = new System.Drawing.Size(647, 27);
-            this.txtHerramientas.TabIndex = 15;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.MistyRose;
-            this.btnSalir.ForeColor = System.Drawing.Color.Red;
-            this.btnSalir.Location = new System.Drawing.Point(604, 571);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 45);
-            this.btnSalir.TabIndex = 14;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = false;
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BackColor = System.Drawing.Color.Honeydew;
-            this.btnGuardar.ForeColor = System.Drawing.Color.Green;
-            this.btnGuardar.Location = new System.Drawing.Point(685, 571);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 45);
-            this.btnGuardar.TabIndex = 13;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = false;
-            // 
-            // dtgvHerramientas
-            // 
-            this.dtgvHerramientas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvHerramientas.Location = new System.Drawing.Point(29, 346);
-            this.dtgvHerramientas.Name = "dtgvHerramientas";
-            this.dtgvHerramientas.Size = new System.Drawing.Size(347, 200);
-            this.dtgvHerramientas.TabIndex = 12;
+            this.txtNombre.Location = new System.Drawing.Point(122, 112);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(647, 27);
+            this.txtNombre.TabIndex = 15;
             // 
             // label1
             // 
@@ -99,14 +66,6 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Agregar Usuarios";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(409, 346);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(351, 200);
-            this.dataGridView1.TabIndex = 16;
             // 
             // label2
             // 
@@ -135,19 +94,19 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Apellido Paterno";
             // 
-            // textBox1
+            // txtApellidoP
             // 
-            this.textBox1.Location = new System.Drawing.Point(182, 161);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(221, 27);
-            this.textBox1.TabIndex = 20;
+            this.txtApellidoP.Location = new System.Drawing.Point(182, 161);
+            this.txtApellidoP.Name = "txtApellidoP";
+            this.txtApellidoP.Size = new System.Drawing.Size(221, 27);
+            this.txtApellidoP.TabIndex = 20;
             // 
-            // textBox2
+            // txtRFC
             // 
-            this.textBox2.Location = new System.Drawing.Point(122, 207);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(182, 27);
-            this.textBox2.TabIndex = 21;
+            this.txtRFC.Location = new System.Drawing.Point(122, 207);
+            this.txtRFC.Name = "txtRFC";
+            this.txtRFC.Size = new System.Drawing.Size(182, 27);
+            this.txtRFC.TabIndex = 21;
             // 
             // label5
             // 
@@ -158,12 +117,12 @@
             this.label5.TabIndex = 22;
             this.label5.Text = "Apellido Materno ";
             // 
-            // textBox3
+            // txtApellidoM
             // 
-            this.textBox3.Location = new System.Drawing.Point(569, 164);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 27);
-            this.textBox3.TabIndex = 23;
+            this.txtApellidoM.Location = new System.Drawing.Point(569, 164);
+            this.txtApellidoM.Name = "txtApellidoM";
+            this.txtApellidoM.Size = new System.Drawing.Size(200, 27);
+            this.txtApellidoM.TabIndex = 23;
             // 
             // label6
             // 
@@ -174,12 +133,12 @@
             this.label6.TabIndex = 24;
             this.label6.Text = "Nombre Usuario";
             // 
-            // textBox4
+            // txtUsuario
             // 
-            this.textBox4.Location = new System.Drawing.Point(182, 251);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(578, 27);
-            this.textBox4.TabIndex = 25;
+            this.txtUsuario.Location = new System.Drawing.Point(182, 251);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(578, 27);
+            this.txtUsuario.TabIndex = 25;
             // 
             // label7
             // 
@@ -190,12 +149,12 @@
             this.label7.TabIndex = 26;
             this.label7.Text = "Contraseña";
             // 
-            // textBox5
+            // txtContraseña
             // 
-            this.textBox5.Location = new System.Drawing.Point(182, 295);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(578, 27);
-            this.textBox5.TabIndex = 27;
+            this.txtContraseña.Location = new System.Drawing.Point(182, 295);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(578, 27);
+            this.txtContraseña.TabIndex = 27;
             // 
             // label8
             // 
@@ -206,12 +165,45 @@
             this.label8.TabIndex = 28;
             this.label8.Text = "Fecha Nacimiento";
             // 
-            // dateTimePicker1
+            // dtpFechaNacimiento
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(474, 207);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(286, 27);
-            this.dateTimePicker1.TabIndex = 29;
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(474, 207);
+            this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
+            this.dtpFechaNacimiento.Size = new System.Drawing.Size(286, 27);
+            this.dtpFechaNacimiento.TabIndex = 29;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.Honeydew;
+            this.btnGuardar.ForeColor = System.Drawing.Color.Green;
+            this.btnGuardar.Location = new System.Drawing.Point(659, 348);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(75, 45);
+            this.btnGuardar.TabIndex = 13;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.MistyRose;
+            this.btnSalir.ForeColor = System.Drawing.Color.Red;
+            this.btnSalir.Location = new System.Drawing.Point(569, 348);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 45);
+            this.btnSalir.TabIndex = 14;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            // 
+            // btnAgregarPermisos
+            // 
+            this.btnAgregarPermisos.Location = new System.Drawing.Point(122, 348);
+            this.btnAgregarPermisos.Name = "btnAgregarPermisos";
+            this.btnAgregarPermisos.Size = new System.Drawing.Size(412, 45);
+            this.btnAgregarPermisos.TabIndex = 30;
+            this.btnAgregarPermisos.Text = "Agregar Permisos";
+            this.btnAgregarPermisos.UseVisualStyleBackColor = true;
+            this.btnAgregarPermisos.Click += new System.EventHandler(this.btnAgregarPermisos_Click);
             // 
             // frmAgregarUsuarios
             // 
@@ -219,31 +211,28 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(788, 625);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.btnAgregarPermisos);
+            this.Controls.Add(this.dtpFechaNacimiento);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtApellidoM);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtRFC);
+            this.Controls.Add(this.txtApellidoP);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.txtHerramientas);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.dtgvHerramientas);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAgregarUsuarios";
             this.Text = "frmAgregarUsuarios";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvHerramientas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,24 +240,23 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtHerramientas;
-        private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.DataGridView dtgvHerramientas;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtApellidoP;
+        private System.Windows.Forms.TextBox txtRFC;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtApellidoM;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnAgregarPermisos;
     }
 }

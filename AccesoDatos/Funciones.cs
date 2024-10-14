@@ -10,7 +10,7 @@ namespace AccesoDatos
 {
     public class Funciones
     {
-        Base b = new Base("localhost", "root", "", "Biblioteca");
+        Base b = new Base("localhost", "root", "", "AgenciaAutomotriz");
         public string Guardar(string q)
         {
             return b.Comando(q);

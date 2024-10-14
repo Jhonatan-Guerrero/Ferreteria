@@ -70,6 +70,12 @@
     <Compile Include="frmAgregarUsuarios.Designer.cs">
       <DependentUpon>frmAgregarUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEditUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditUsuarios.Designer.cs">
+      <DependentUpon>frmEditUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHerramientas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,12 @@
     </Compile>
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPermisos.Designer.cs">
+      <DependentUpon>frmPermisos.cs</DependentUpon>
     </Compile>
     <Compile Include="frmUsuarios.cs">
       <SubType>Form</SubType>
@@ -108,11 +120,17 @@
     <EmbeddedResource Include="frmAgregarUsuarios.resx">
       <DependentUpon>frmAgregarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEditUsuarios.resx">
+      <DependentUpon>frmEditUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHerramientas.resx">
       <DependentUpon>frmHerramientas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPermisos.resx">
+      <DependentUpon>frmPermisos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsuarios.resx">
       <DependentUpon>frmUsuarios.cs</DependentUpon>
@@ -141,6 +159,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Manejador\Manejador.csproj">
+      <Project>{75feb99e-48f2-4cec-97c8-8113a00735be}</Project>
+      <Name>Manejador</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
