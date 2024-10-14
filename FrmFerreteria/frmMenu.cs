@@ -58,6 +58,22 @@ namespace FrmFerreteria
 
         }
 
-        
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            if (btnUsuarios.Enabled)
+            {
+                Productos p = new Productos(permisos);
+                p.Show();
+            }
+            else
+            {
+                MessageBox.Show("No tienes permisos para acceder a Usuarios.");
+            }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

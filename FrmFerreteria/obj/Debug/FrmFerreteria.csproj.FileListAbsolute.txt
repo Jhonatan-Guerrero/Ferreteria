@@ -53,3 +53,6 @@ C:\Users\nonat\Desktop\FrmFerreteria\FrmFerreteria\obj\Debug\FrmFerreteria.exe
 C:\Users\nonat\Desktop\FrmFerreteria\FrmFerreteria\obj\Debug\FrmFerreteria.pdb
 C:\Users\nonat\Desktop\FrmFerreteria\FrmFerreteria\obj\Debug\FrmFerreteria.frmPermisos.resources
 C:\Users\nonat\Desktop\FrmFerreteria\FrmFerreteria\obj\Debug\FrmFerreteria.frmEditUsuarios.resources
+C:\Users\nonat\Desktop\FrmFerreteria\FrmFerreteria\obj\Debug\FrmFerreteria.frmEliminarProducto.resources
+C:\Users\nonat\Desktop\FrmFerreteria\FrmFerreteria\obj\Debug\FrmFerreteria.frmEditarProductos.resources
+C:\Users\nonat\Desktop\FrmFerreteria\FrmFerreteria\obj\Debug\FrmFerreteria.frmEditarProductos2.resources

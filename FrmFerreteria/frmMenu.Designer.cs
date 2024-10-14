@@ -87,6 +87,7 @@
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(64, 64);
             this.btnProductos.Text = "toolStripButton3";
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
             // btnSalir
             // 
@@ -98,6 +99,7 @@
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(64, 64);
             this.btnSalir.Text = "toolStripButton4";
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // frmMenu
             // 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Manejador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,22 @@ namespace FrmFerreteria
 {
     public partial class frmAgregarProductos : Form
     {
+        ManejadorProductos mp;
         public frmAgregarProductos()
         {
             InitializeComponent();
+            mp= new ManejadorProductos();   
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            mp.Guardar(txtNombre,txtDescripcion,txtMarca); 
+            Close(); 
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

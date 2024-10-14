@@ -70,11 +70,29 @@
     <Compile Include="frmAgregarUsuarios.Designer.cs">
       <DependentUpon>frmAgregarUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEditarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarProductos.Designer.cs">
+      <DependentUpon>frmEditarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarProductos2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarProductos2.Designer.cs">
+      <DependentUpon>frmEditarProductos2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEditUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmEditUsuarios.Designer.cs">
       <DependentUpon>frmEditUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEliminarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminarProducto.Designer.cs">
+      <DependentUpon>frmEliminarProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="frmHerramientas.cs">
       <SubType>Form</SubType>
@@ -120,8 +138,17 @@
     <EmbeddedResource Include="frmAgregarUsuarios.resx">
       <DependentUpon>frmAgregarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarProductos.resx">
+      <DependentUpon>frmEditarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarProductos2.resx">
+      <DependentUpon>frmEditarProductos2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEditUsuarios.resx">
       <DependentUpon>frmEditUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarProducto.resx">
+      <DependentUpon>frmEliminarProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHerramientas.resx">
       <DependentUpon>frmHerramientas.cs</DependentUpon>
