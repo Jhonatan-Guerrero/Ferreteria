@@ -24,40 +24,40 @@ namespace FrmFerreteria
 
         private void dtgvPermisos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0) // Asegura que se hace clic en una fila válida
+            if (e.RowIndex >= 0) 
             {
                 DataGridViewRow row = dtgvPermisos.Rows[e.RowIndex];
-                // Aquí puedes hacer algo adicional si lo necesitas, como resaltar la fila seleccionada
+                
             }
         }
 
         private void dtgvUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0) // Asegura que se hace clic en una fila válida
+            if (e.RowIndex >= 0) 
             {
                 DataGridViewRow row = dtgvUsuarios.Rows[e.RowIndex];
-                // Aquí puedes hacer algo adicional si lo necesitas, como resaltar la fila seleccionada
             }
+
         }
 
         private void btnGuardarPermisos_Click(object sender, EventArgs e)
         {
-            // Verificar si hay una fila seleccionada en dtgvUsuarios y dtgvFormularios
+            
             if (dtgvUsuarios.SelectedRows.Count > 0 && dtgvPermisos.SelectedRows.Count > 0)
             {
-                // Intentar obtener el ID del usuario y del formulario seleccionados
+                
                 try
                 {
                     int idUsuario = Convert.ToInt32(dtgvUsuarios.SelectedRows[0].Cells["IdUsuario"].Value);
                     int idFormulario = Convert.ToInt32(dtgvPermisos.SelectedRows[0].Cells["IdFormulario"].Value);
 
-                    // Obtener los valores de los ComboBox (Sí es true, No es false)
-                    bool permisoLectura = cmbLectura.SelectedItem.ToString() == "Sí";
-                    bool permisoEscritura = cmbEscritura.SelectedItem.ToString() == "Sí";
-                    bool permisoEliminacion = cmbEliminacion.SelectedItem.ToString() == "Sí";
-                    bool permisoActualizacion = cmbActualizacion.SelectedItem.ToString() == "Sí";
+                 
+                    bool permisoLectura = cmbLectura.SelectedItem.ToString() == "Si";
+                    bool permisoEscritura = cmbEscritura.SelectedItem.ToString() == "Si";
+                    bool permisoEliminacion = cmbEliminacion.SelectedItem.ToString() == "Si";
+                    bool permisoActualizacion = cmbActualizacion.SelectedItem.ToString() == "Si";
 
-                    // Llamar al método para guardar los permisos
+                  
                     mu.GuardarPermisosUsuario(idUsuario, idFormulario, permisoLectura, permisoEscritura, permisoEliminacion, permisoActualizacion);
 
                     MessageBox.Show("Permisos guardados correctamente.");
@@ -69,7 +69,7 @@ namespace FrmFerreteria
             }
             else
             {
-                // Mostrar mensaje si no hay fila seleccionada
+             
                 MessageBox.Show("Debe seleccionar un usuario y un formulario.");
             }
         }

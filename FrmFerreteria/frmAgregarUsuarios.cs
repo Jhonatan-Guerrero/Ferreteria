@@ -63,6 +63,11 @@ namespace FrmFerreteria
             frmPermisos p = new frmPermisos();
             p.Show();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
   
  

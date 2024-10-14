@@ -96,17 +96,30 @@ namespace Manejador
         public void Mostrar(DataGridView tabla, string filtro)
         {
             tabla.Columns.Clear();
-            tabla.DataSource = funciones.Mostrar($"SELECT u.Nombre AS NombreUsuario, u.ApellidoP AS ApellidoPaterno, u.ApellidoM AS ApellidoMaterno, f.Nombre AS Formulario, CASE WHEN pu.Lectura = 1 THEN 'Sí' ELSE 'No' END AS Lectura, CASE WHEN pu.Escritura = 1 THEN 'Sí' ELSE 'No' END AS Escritura, CASE WHEN pu.Eliminacion = 1 THEN 'Sí' ELSE 'No' END AS Eliminacion, CASE WHEN pu.Actualizacion = 1 THEN 'Sí' ELSE 'No' END AS Actualizacion FROM Usuarios u JOIN PermisosUsuario pu ON u.IdUsuario = pu.IdUsuario JOIN Formularios f ON pu.IdFormulario = f.IdFormulario WHERE u.Nombre LIKE '%{filtro}%';", "PermisosUsuario").Tables[0];
-            tabla.Columns.Insert(8, Boton("Borrar", Color.Red));
+            tabla.DataSource = funciones.Mostrar($"SELECT u.IdUsuario, u.Nombre AS NombreUsuario, u.ApellidoP AS ApellidoPaterno, u.ApellidoM AS ApellidoMaterno, f.Nombre AS Formulario, CASE WHEN pu.Lectura = 1 THEN 'Sí' ELSE 'No' END AS Lectura, CASE WHEN pu.Escritura = 1 THEN 'Si' ELSE 'No' END AS Escritura, CASE WHEN pu.Eliminacion = 1 THEN 'Si' ELSE 'No' END AS Eliminacion, CASE WHEN pu.Actualizacion = 1 THEN 'Si' ELSE 'No' END AS Actualizacion FROM Usuarios u JOIN PermisosUsuario pu ON u.IdUsuario = pu.IdUsuario JOIN Formularios f ON pu.IdFormulario = f.IdFormulario WHERE u.Nombre LIKE '%{filtro}%';", "PermisosUsuario").Tables[0];
+            tabla.Columns.Insert(8, Boton("Editar", Color.Green));
             tabla.AutoResizeColumns();
             tabla.AutoResizeRows();
         }
 
 
+        public void Modificar(TextBox Nombre, TextBox ApellidoP, TextBox ApellidoM, DateTimePicker FechaN, TextBox Rfc, TextBox Usuario, TextBox Contraseña, int IdUsuario)
+        {
+            MessageBox.Show(funciones.Modificar($"CALL p_ActualizarUsuario({IdUsuario},'{Nombre.Text}','{ApellidoP.Text}','{ApellidoM.Text}', '{FechaN.Text}', '{Rfc.Text}', '{Usuario.Text}', '{Contraseña.Text}')"), "!ATENCIÓN!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
 
 
-
-
+        public void Eliminar(int Idusuario, string dato)
+        {
+            
+                DialogResult rs = MessageBox.Show($"¿Estás seguro de borrar el registro {dato}?", "!ATENCIÓN", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (rs == DialogResult.Yes)
+                {
+                    funciones.Borrar($"DELETE FROM PermisosUsuario WHERE IdUsuario = '{Idusuario}'");
+                    MessageBox.Show("Registro Eliminado", "!Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            
+        }
 
 
 

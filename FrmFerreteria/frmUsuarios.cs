@@ -70,6 +70,11 @@ namespace FrmFerreteria
             frmEditUsuarios editarForm = new frmEditUsuarios();
             editarForm.Show();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+
+        }
     }  
 }
 

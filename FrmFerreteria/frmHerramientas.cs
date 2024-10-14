@@ -73,5 +73,10 @@ namespace FrmFerreteria
             frmEditarHerramientas eh = new frmEditarHerramientas();
             eh.Show();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

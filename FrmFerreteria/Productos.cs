@@ -79,5 +79,10 @@ namespace FrmFerreteria
             frmEditarProductos ep = new frmEditarProductos();
             ep.Show();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
